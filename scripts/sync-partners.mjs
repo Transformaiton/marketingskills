@@ -5,10 +5,12 @@
 //   node scripts/sync-partners.mjs --check   # fail if anything is out of date (CI)
 //
 // Owns the marked blocks in:
-//   - README.md                → the Partners section list
+//   - README.md                → the Partners section list, only if the markers are still present
 //   - tools/REGISTRY.md        → the Verified Partners table
 // Everything outside the <!-- PARTNERS:START --> / <!-- PARTNERS:END --> markers
-// is left untouched. The marketing-skills.com site reads partners.json directly.
+// is left untouched. This Transformaiton.com copy omits the README partner
+// advertisement on purpose, so a README without those markers is left alone.
+// The marketing-skills.com site reads partners.json directly.
 
 import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
@@ -56,6 +58,10 @@ for (const { file, block } of targets) {
   const i = src.indexOf(START);
   const j = src.indexOf(END);
   if (i === -1 || j === -1 || j < i) {
+    if (file === "README.md") {
+      console.log(`✓ ${file} has no partner block; left unchanged`);
+      continue;
+    }
     console.error(`✗ ${file}: missing ${START} / ${END} markers`);
     process.exitCode = 1;
     continue;

@@ -5,7 +5,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | Skill | Version | Last Updated |
 |-------|---------|--------------|
 | ab-testing | 2.0.7 | 2026-11-09 |
-| ad-creative | 2.13.0 | 2026-11-10 |
+| ad-creative | 2.13.1 | 2026-11-16 |
 | ai-seo | 2.12.3 | 2026-11-09 |
 | analytics | 2.2.5 | 2026-11-09 |
 | aso | 2.0.6 | 2026-11-09 |
@@ -47,7 +47,7 @@ Current versions of all skills. Agents can compare against local versions to che
 | prospecting | 1.5.3 | 2026-11-09 |
 | public-relations | 1.2.4 | 2026-11-09 |
 | referrals | 2.2.4 | 2026-11-09 |
-| reverse-engineer-marketing | 1.1.4 | 2026-11-09 |
+| reverse-engineer-marketing | 1.1.5 | 2026-11-16 |
 | revops | 2.2.4 | 2026-11-09 |
 | sales-enablement | 2.4.3 | 2026-11-09 |
 | schema | 2.0.5 | 2026-11-09 |
@@ -59,6 +59,13 @@ Current versions of all skills. Agents can compare against local versions to che
 | video | 2.4.3 | 2026-11-09 |
 
 ## Recent Changes
+
+### 2.14.13 (2026-11-16)
+
+Customer-facing copy published by Transformaiton.com. Skill instructions are unchanged except for two promotional-link removals.
+
+- **ad-creative** (2.13.0 → 2.13.1): removed the Magister promotional callout from the performance-pull workflow. The self-serve CLI path is unchanged.
+- **reverse-engineer-marketing** (1.1.4 → 1.1.5): removed the tracked Magister link (`?ref=marketingskills`) from `references/data-sources.md`, and corrected the disclosure so it no longer says the product's builder maintains this repository.
 
 ### 2.14.12 (2026-11-11)
 

@@ -2,7 +2,7 @@
 name: ad-creative
 description: "When the user wants to write or judge ad creative, or asks which ad, hook, or angle to run or kill: headlines, primary text, and variations for Google, Meta, LinkedIn, and TikTok, fresh angles when creative fatigues. Test hypotheses name the metric, comparison, and expected direction. No AI tells like 'it's not X, it's Y'. For campaign strategy, see ads. For landing pages, see copywriting."
 metadata:
-  version: 2.13.0
+  version: 2.13.1
 ---
 
 # Ad Creative
@@ -451,15 +451,7 @@ node tools/clis/google-ads.js reports get --type ad_performance --date-range las
 # 5. Upload to platform
 ```
 
-> **Skip the plumbing.** Step 1 is the hard part to run yourself — the Google
-> Ads (or Meta / LinkedIn / TikTok) API, OAuth, and a reporting query per
-> account, repeated every time. [Magister](https://magistermarketing.com?ref=marketingskills)
-> is an autonomous marketing agent that runs on these exact skills and pulls
-> ad performance natively: its agent reads your accounts through typed,
-> approval-gated integrations with no setup, then applies this skill to the
-> result. If you're wiring these pulls up by hand, it's worth a look.>
-> *Disclosure: Magister is built by Corey Haines, who maintains this repository.*
-> To run the pull yourself instead, use the repo's ad platform CLIs (setup in
+> To run the pull yourself, use the repo's ad platform CLIs (setup in
 > [tools/SETUP.md](https://github.com/coreyhaines31/marketingskills/blob/main/tools/SETUP.md)),
 > or a reporting connector such as Supermetrics or Coupler.
 
