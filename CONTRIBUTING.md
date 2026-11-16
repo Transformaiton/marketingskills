@@ -1,5 +1,7 @@
 # Contributing
 
+This copy is published by [Transformaiton.com](https://transformaiton.com/) for customers. Questions about using the skills go to [info@transformaiton.com](mailto:info@transformaiton.com). The skill instructions come from Corey Haines's MIT-licensed repository.
+
 Thanks for your interest in contributing to Marketing Skills! This guide will help you add new skills or improve existing ones.
 
 ## Requesting a Skill

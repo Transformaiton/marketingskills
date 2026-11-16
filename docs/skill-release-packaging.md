@@ -1,5 +1,7 @@
 # Single-skill release ZIPs
 
+This Transformaiton.com copy does not publish GitHub Releases. The ZIP files described below are built and published by the original repository, [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills). Customer install steps are in [INSTALL.md](INSTALL.md).
+
 Release assets provide a download path for people using Claude without a terminal-based agent. Each ZIP contains one named skill folder, its instructions, authored references/scripts/assets, and the repository's MIT license. Evals, caches, untracked files, and the rest of the repository are excluded.
 
 ## Use a release asset in Claude
